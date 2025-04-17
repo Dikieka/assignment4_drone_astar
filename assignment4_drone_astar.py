@@ -70,12 +70,10 @@ def run_assignment4():
     start = find(grid, "S")
     goal = find(grid, "G")
 
-    # Catat waktu mulai
     t0 = time.perf_counter()
 
     path, node_count = a_star(grid, start, goal)
     
-    # Catat waktu selesai
     t1 = time.perf_counter()
 
     print("\nAssignment 4 - A* Path (Drone Navigation):")
@@ -84,7 +82,6 @@ def run_assignment4():
     else:
         print("No path found.")
 
-    # Hitung waktu eksekusi dalam milidetik
     exec_time = (t1 - t0) * 1000
 
     print(f"Execution Time: {exec_time:.4f} ms")
