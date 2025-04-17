@@ -27,7 +27,7 @@ def a_star(grid, start, goal):
 
     while open_set:
         _, current = heapq.heappop(open_set)
-        node_count += 1  # Hitung setiap node yang diproses
+        node_count += 1 
         if current == goal:
             return reconstruct(came_from, start, goal), node_count
 
